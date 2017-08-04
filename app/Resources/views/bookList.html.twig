@@ -1,0 +1,10 @@
+{# empty Twig template #}
+<pre>
+<a href="login">Login</a>
+
+<h1>The book list:</h1>
+{% for i in 0..bookLink|length-1 %}
+<a href="book/{{ bookLink[i] }}">{{ bookName[i] }}</a>
+
+{% endfor %}
+</pre>
